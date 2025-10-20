@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(180deg, #262626 0%, #1f1f1f 100%);
+  color: #eaeaea;
+  line-height: 1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+header {
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  padding: 18px 10px;
+}
+
+.top-bar {
+  height: 10px;
+  background: linear-gradient(90deg,#33e4ce,#2abfb0);
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+main {
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 28px;
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.55);
+}
+
+h1 { color: #fff; }
+h2 { color: #33e4ce; margin-top: 0; }
+
+/* Tags list layout */
+.tags ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+.tags ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 6px;
+  border-bottom: 1px dashed rgba(255,255,255,0.02);
+  color: #e6e6e6;
+  font-size: 15px;
+}
+.tags ul li:last-child {
+  border-bottom: none;
+}
+.tags ul li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* alterado para círculo */
+  flex: 0 0 50px;
+  background: rgba(255,255,255,0.02);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5) inset;
+  border: 2px solid rgba(255,255,255,0.04); /* leve contorno para contraste */
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px 0;
+  color: #9aa6a6;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 18px; gap:10px; }
+  .logo { height: 48px; }
+  .tags ul li { font-size: 14px; gap:10px; }
+}
